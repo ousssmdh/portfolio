@@ -5,252 +5,230 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Oussama Madih – Technicien datacenter</title>
 <meta name="description" content="Portfolio d’Oussama Madih, étudiant en BUT Réseaux et Télécommunications, futur apprenti technicien data center chez Microsoft.">
-<meta name="theme-color" content="#050B18">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E❄️%3C/text%3E%3C/svg%3E">
+<meta name="theme-color" content="#F4EFE8">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' fill='%23FF4F8B'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;500&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{color-scheme:dark;--bg:#050B18;--ice:#CFEAFF;--ice2:#8FD3FF;--text:#DCE8F5;--muted:#8DA2BC;--glass:rgba(190,225,255,.06);--edge:rgba(190,225,255,.16);--ok:#5CF0B0;
---d:"Outfit","Helvetica Neue",Arial,sans-serif;--b:"Figtree","Helvetica Neue",Arial,sans-serif}
+:root{color-scheme:light;--bg:#F4EFE8;--ink:#14181F;--muted:#5E636C;--line:rgba(20,24,31,.16);--pink:#FF4F8B;--pinkd:#D82F6B;--cream:#F4EFE8;
+--d:"Instrument Serif",Georgia,"Times New Roman",serif;--b:"Hanken Grotesk","Helvetica Neue",Arial,sans-serif}
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:70px}
-body{margin:0;background:radial-gradient(1200px 700px at 78% -5%,#12305A 0%,transparent 60%),radial-gradient(900px 600px at 0% 40%,#0B2342 0%,transparent 60%),var(--bg);background-attachment:fixed;color:var(--text);font:400 17px/1.65 var(--b);-webkit-font-smoothing:antialiased}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 18px/1.6 var(--b);-webkit-font-smoothing:antialiased}
 a{color:inherit}
-:focus-visible{outline:2px solid var(--ice2);outline-offset:4px;border-radius:4px}
-#snow{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:0}
-.wrap{position:relative;z-index:1;max-width:1120px;margin:0 auto;padding:0 24px}
-header{position:sticky;top:0;z-index:5;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);background:rgba(5,11,24,.55);border-bottom:1px solid var(--edge)}
-header .wrap{display:flex;justify-content:space-between;align-items:center;height:62px;gap:16px}
-.logo{font:300 20px var(--d);letter-spacing:.14em;text-decoration:none;text-transform:uppercase}
-nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:0;flex-wrap:wrap;justify-content:flex-end}
-nav a{text-decoration:none;font-size:15px;color:var(--muted)}
-nav a:hover{color:var(--ice)}
+:focus-visible{outline:3px solid var(--pink);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1240px;margin:0 auto;padding:0 28px}
+header{position:sticky;top:0;z-index:10;background:rgba(244,239,232,.88);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:70px;gap:20px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font:500 18px var(--b);letter-spacing:.04em}
+.logo i{width:14px;height:14px;border-radius:50%;background:var(--pink)}
+nav ul{display:flex;gap:28px;list-style:none;margin:0;padding:0;align-items:center}
+nav a{text-decoration:none;font-size:15px}
+nav a:hover{color:var(--pinkd)}
+nav .pill{background:var(--ink);color:var(--cream);padding:9px 20px;border-radius:999px;font-weight:500}
+nav .pill:hover{background:var(--pink);color:var(--ink)}
 
-.hero{min-height:calc(100vh - 62px);display:flex;align-items:center;padding:56px 0}
-.hero .wrap{display:grid;grid-template-columns:1.4fr .6fr;gap:48px;align-items:center;width:100%}
-.tag{display:inline-flex;align-items:center;gap:10px;font-size:14px;color:var(--ice2);border:1px solid var(--edge);background:var(--glass);border-radius:999px;padding:6px 16px;margin-bottom:28px}
-.tag i{width:8px;height:8px;border-radius:50%;background:var(--ok);box-shadow:0 0 10px var(--ok);animation:pulse 2.4s infinite}
-h1{font:200 clamp(52px,9.5vw,118px)/.98 var(--d);letter-spacing:-.03em;margin:0 0 26px;background:linear-gradient(180deg,#fff 10%,var(--ice2) 120%);-webkit-background-clip:text;background-clip:text;color:transparent}
-h1 b{font-weight:500}
-.lead{font-size:clamp(18px,2.2vw,23px);color:var(--text);max-width:36ch;margin:0 0 34px;font-weight:400}
-.cta{display:flex;gap:12px;flex-wrap:wrap}
-.btn{padding:13px 24px;border-radius:999px;text-decoration:none;font-weight:600;font-size:16px;border:1px solid var(--edge);background:var(--glass);transition:.25s}
-.btn:hover{background:rgba(190,225,255,.14);border-color:var(--ice2)}
-.btn.main{background:var(--ice);color:#06142B;border-color:var(--ice)}
-.btn.main:hover{background:#fff}
+.hero{padding:70px 0 40px}
+.eyebrow{font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin:0 0 22px;font-weight:500}
+h1{font:400 clamp(70px,15vw,210px)/.86 var(--d);letter-spacing:-.025em;margin:0}
+h1 em{color:var(--pink);font-style:italic;display:block}
+.hero-foot{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:end;margin:40px 0 36px}
+.hero-foot p{margin:0;max-width:34ch;font-size:clamp(18px,2vw,22px)}
+.btn{display:inline-block;padding:14px 28px;border-radius:999px;text-decoration:none;font-weight:500;background:var(--pink);color:var(--ink);transition:.25s}
+.btn:hover{background:var(--ink);color:var(--cream)}
+.horizon{position:relative;height:clamp(240px,38vw,460px);border-radius:26px;overflow:hidden;background:linear-gradient(180deg,#14181F 0%,#34243F 42%,#FF4F8B 80%,#FFD3C2 100%)}
+.horizon::before{content:"";position:absolute;left:50%;bottom:20%;width:clamp(120px,18vw,240px);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,#FFF3E8 0 55%,#FFD3C2 100%);box-shadow:0 0 90px 30px rgba(255,211,194,.6);transform:translate(-50%,60%);animation:rise 2.6s cubic-bezier(.2,.7,.2,1) .3s forwards}
+.horizon::after{content:"";position:absolute;left:0;right:0;bottom:0;height:20%;background:repeating-linear-gradient(180deg,rgba(20,24,31,.9) 0 3px,rgba(20,24,31,.55) 3px 9px)}
+.horizon span{position:absolute;left:24px;bottom:calc(20% + 16px);z-index:2;font-size:14px;color:#fff;letter-spacing:.08em}
+@keyframes rise{to{transform:translate(-50%,-20%)}}
 
-/* Baie de serveurs décorative */
-.rack{justify-self:center;width:min(240px,100%);padding:14px;border:1px solid var(--edge);border-radius:14px;background:linear-gradient(180deg,rgba(190,225,255,.1),rgba(190,225,255,.03));box-shadow:0 30px 80px rgba(0,40,100,.45),inset 0 1px 0 rgba(255,255,255,.12);display:grid;gap:8px}
-.unit{height:34px;border-radius:6px;background:#0A1730;border:1px solid var(--edge);display:flex;align-items:center;justify-content:space-between;padding:0 12px}
-.unit .vent{flex:1;height:10px;margin-right:14px;background:repeating-linear-gradient(90deg,rgba(190,225,255,.22) 0 2px,transparent 2px 7px);border-radius:2px}
-.unit .led{display:flex;gap:6px}
-.unit .led i{width:6px;height:6px;border-radius:50%;background:var(--ok);box-shadow:0 0 8px var(--ok);animation:blink 3s infinite}
-.unit .led i+i{background:var(--ice2);box-shadow:0 0 8px var(--ice2);animation-duration:1.7s}
-.unit:nth-child(2) i{animation-delay:.4s}.unit:nth-child(3) i{animation-delay:1.1s}.unit:nth-child(4) i{animation-delay:.7s}.unit:nth-child(5) i{animation-delay:1.9s}.unit:nth-child(6) i{animation-delay:.2s}.unit:nth-child(7) i{animation-delay:1.4s}
-@keyframes blink{0%,100%{opacity:1}45%{opacity:.25}60%{opacity:1}}
-@keyframes pulse{50%{opacity:.4}}
+section{padding:110px 0 0}
+.manifesto p{font:400 clamp(30px,4.6vw,62px)/1.12 var(--d);letter-spacing:-.01em;margin:0;max-width:22em}
+.manifesto p em{color:var(--pink)}
+.manifesto p.eyebrow{font:500 13px/1.6 var(--b);letter-spacing:.2em;margin:0 0 22px}
+h2{font:400 clamp(44px,7vw,96px)/.95 var(--d);letter-spacing:-.02em;margin:0 0 48px}
+h2 em{color:var(--pink)}
 
-section.s{padding:104px 0 8px}
-.eyebrow{font-size:14px;letter-spacing:.18em;text-transform:uppercase;color:var(--ice2);margin:0 0 12px}
-h2{font:200 clamp(34px,5vw,58px)/1.05 var(--d);letter-spacing:-.02em;margin:0 0 20px;color:#fff}
-.intro{max-width:58ch;color:var(--muted);margin:0 0 44px}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.card{background:var(--glass);border:1px solid var(--edge);border-radius:18px;padding:26px 26px 28px;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);transition:.3s}
-.card:hover{transform:translateY(-4px);border-color:var(--ice2);background:rgba(190,225,255,.09)}
-.card h3{font:500 21px/1.25 var(--d);margin:0 0 10px;color:var(--ice)}
-.card p{margin:0;color:var(--text);font-size:16px}
-.card .kind{display:block;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--ice2);margin-bottom:12px}
-.card .chips{list-style:none;padding:0;margin:16px 0 0;display:flex;flex-wrap:wrap;gap:6px}
-.chips li{font-size:13.5px;color:var(--muted);border:1px solid var(--edge);border-radius:999px;padding:2px 11px}
-.grid.two{grid-template-columns:repeat(2,1fr)}
+.row{display:grid;grid-template-columns:110px 1fr 1.2fr;gap:12px 36px;border-top:1px solid var(--line);padding:34px 0;align-items:start}
+.row:last-child{border-bottom:1px solid var(--line)}
+.num{font:italic 400 56px/1 var(--d);color:var(--pink)}
+.row h3{font:400 clamp(30px,3.4vw,44px)/1.05 var(--d);margin:0}
+.row p{margin:0;color:var(--muted)}
+.row .chips{list-style:none;padding:0;margin:14px 0 0;display:flex;flex-wrap:wrap;gap:8px}
+.chips li{font-size:14px;border:1px solid var(--line);border-radius:999px;padding:3px 13px;color:var(--ink)}
+.role{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:baseline;margin:-18px 0 36px;color:var(--muted)}
+.role b{color:var(--ink);font-weight:600}
 
-.role{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 24px;align-items:baseline;margin-bottom:26px}
-.role h3{font:300 clamp(24px,3vw,32px)/1.2 var(--d);margin:0;color:#fff}
-.role span{color:var(--muted);font-size:15px}
+.tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.tier{border:1px solid var(--line);border-radius:22px;padding:34px 30px;background:rgba(255,255,255,.4)}
+.tier .eyebrow{color:var(--pinkd);margin-bottom:10px}
+.tier h3{font:400 40px/1 var(--d);margin:0 0 22px}
+.tier ul{list-style:none;margin:0;padding:0;display:grid;gap:10px;font-size:16.5px}
+.tier li::before{content:"✓";color:var(--pinkd);font-weight:700;margin-right:10px}
 
-.certs{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-.certs li{border:1px solid var(--edge);background:var(--glass);border-radius:14px;padding:18px}
-.certs b{display:block;font:500 18px var(--d);color:var(--ice);margin-bottom:4px}
-.certs small{color:var(--muted);font-size:14px;line-height:1.4;display:block}
-.timeline{margin:44px 0 0;padding:0 0 0 26px;list-style:none;border-left:1px solid var(--edge)}
-.timeline li{position:relative;padding:0 0 28px 6px}
-.timeline li::before{content:"";position:absolute;left:-31px;top:8px;width:9px;height:9px;border-radius:50%;background:var(--ice2);box-shadow:0 0 12px var(--ice2)}
-.timeline h3{margin:0;font:500 19px var(--d);color:#fff}
-.timeline p{margin:2px 0 0;color:var(--muted);font-size:15.5px}
+.dark{background:var(--ink);color:var(--cream);margin-top:110px;padding:110px 0}
+.certs{list-style:none;margin:0 0 70px;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.certs li{border-top:2px solid var(--pink);padding-top:16px}
+.certs b{display:block;font:400 34px/1.1 var(--d)}
+.certs small{display:block;margin-top:8px;color:#B4B8C0;font-size:15px;line-height:1.45}
+.edu{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.edu div{border:1px solid rgba(244,239,232,.22);border-radius:22px;padding:28px}
+.edu h3{font:400 30px/1.1 var(--d);margin:0 0 8px}
+.edu p{margin:0;color:#B4B8C0;font-size:16px}
 
-.contact{text-align:center;padding:120px 0 90px}
-.contact h2{font-size:clamp(40px,7vw,84px)}
-.links{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:34px}
-footer{position:relative;z-index:1;text-align:center;color:var(--muted);font-size:14px;padding:26px 0 40px;border-top:1px solid var(--edge)}
+.contact{padding:120px 0 90px;text-align:center}
+.contact h2{font-size:clamp(50px,9vw,130px);margin-bottom:34px}
+.mail{display:inline-block;font:400 clamp(24px,4vw,52px)/1.2 var(--d);text-decoration:none;border-bottom:3px solid var(--pink);word-break:break-all}
+.mail:hover{color:var(--pinkd)}
+.links{display:flex;gap:14px;justify-content:center;margin-top:36px;flex-wrap:wrap}
+.links a{padding:12px 26px;border:1px solid var(--ink);border-radius:999px;text-decoration:none;font-weight:500;transition:.25s}
+.links a:hover{background:var(--ink);color:var(--cream)}
+footer{border-top:1px solid var(--line);padding:26px 0 40px;color:var(--muted);font-size:14.5px}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 
-.fade{opacity:0;transform:translateY(24px);transition:opacity .9s ease,transform .9s ease}
+.fade{opacity:0;transform:translateY(28px);transition:opacity .9s ease,transform .9s ease}
 .fade.in{opacity:1;transform:none}
 
 @media (max-width:900px){
-  .hero{min-height:0}.hero .wrap{grid-template-columns:1fr}.rack{justify-self:start;width:200px}
-  .grid,.grid.two{grid-template-columns:1fr 1fr}.certs{grid-template-columns:1fr 1fr}
+  .row{grid-template-columns:70px 1fr}.row>p,.row>div:last-child{grid-column:2}
+  .tiers{grid-template-columns:1fr}.certs{grid-template-columns:1fr 1fr}.edu{grid-template-columns:1fr}
+  nav ul{gap:16px}nav li:nth-child(n+4):not(:last-child){display:none}
 }
-@media (max-width:600px){
-  header .wrap{height:auto;padding-top:10px;padding-bottom:10px;flex-direction:column;align-items:flex-start;gap:6px}
-  nav ul{gap:14px;justify-content:flex-start}
-  .grid,.grid.two,.certs{grid-template-columns:1fr}.role{grid-template-columns:1fr}
-  section.s{padding-top:76px}
+@media (max-width:560px){
+  .wrap{padding:0 20px}.certs{grid-template-columns:1fr}.row{grid-template-columns:1fr}.row>p,.row>div:last-child{grid-column:1}
+  nav li:nth-child(n+2):not(:last-child){display:none}section{padding-top:80px}.dark{margin-top:80px;padding:80px 0}
 }
 @media (prefers-reduced-motion:reduce){
-  html{scroll-behavior:auto}
-  *{animation:none!important;transition:none!important}
-  .fade{opacity:1;transform:none}
+  html{scroll-behavior:auto}*{transition:none!important}
+  .horizon::before{animation:none;transform:translate(-50%,-20%)}.fade{opacity:1;transform:none}
 }
 </style>
 </head>
 <body>
-<canvas id="snow" aria-hidden="true"></canvas>
-
 <header>
   <div class="wrap">
-    <a class="logo" href="#haut">Oussama</a>
+    <a class="logo" href="#haut"><i></i>Oussama Madih</a>
     <nav aria-label="Navigation principale">
       <ul>
         <li><a href="#datacenter">Datacenter</a></li>
         <li><a href="#competences">Compétences</a></li>
         <li><a href="#projets">Projets</a></li>
         <li><a href="#formation">Formation</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a class="pill" href="#contact">Contact</a></li>
       </ul>
     </nav>
   </div>
 </header>
 
 <main id="haut">
-  <section class="hero">
+  <div class="hero">
     <div class="wrap">
-      <div>
-        <span class="tag"><i></i>Futur apprenti technicien data center chez Microsoft</span>
-        <h1>Oussama <b>Madih</b></h1>
-        <p class="lead">Étudiant en Réseaux et Télécommunications. Je me spécialise dans le déploiement, la maintenance et la sécurité des infrastructures critiques à grande échelle.</p>
-        <div class="cta">
-          <a class="btn main" href="#datacenter">Mon expérience datacenter</a>
-          <a class="btn" href="#contact">Me contacter</a>
-        </div>
+      <p class="eyebrow">Portfolio · Infrastructures datacenter</p>
+      <h1>Oussama<em>Madih</em></h1>
+      <div class="hero-foot">
+        <p>Futur apprenti technicien data center chez Microsoft. Étudiant en Réseaux et Télécommunications.</p>
+        <a class="btn" href="#datacenter">Découvrir mon parcours</a>
       </div>
-      <div class="rack" aria-hidden="true">
-        <div class="unit"><span class="vent"></span><span class="led"><i></i><i></i></span></div>
-        <div class="unit"><span class="vent"></span><span class="led"><i></i><i></i></span></div>
-        <div class="unit"><span class="vent"></span><span class="led"><i></i><i></i></span></div>
-        <div class="unit"><span class="vent"></span><span class="led"><i></i><i></i></span></div>
-        <div class="unit"><span class="vent"></span><span class="led"><i></i><i></i></span></div>
-        <div class="unit"><span class="vent"></span><span class="led"><i></i><i></i></span></div>
-        <div class="unit"><span class="vent"></span><span class="led"><i></i><i></i></span></div>
-      </div>
+      <div class="horizon" role="img" aria-label="Illustration : un soleil se lève sur l’horizon"><span>MARSEILLE · MICROSOFT DATACENTER</span></div>
+    </div>
+  </div>
+
+  <section class="manifesto">
+    <div class="wrap fade">
+      <p class="eyebrow">Manifeste</p>
+      <p>Passionné de hardware et de terrain, je me spécialise dans le <em>déploiement</em>, la <em>maintenance</em> et la <em>sécurité</em> des infrastructures critiques à grande échelle.</p>
     </div>
   </section>
 
-  <section class="s" id="datacenter">
+  <section id="datacenter">
     <div class="wrap fade">
       <p class="eyebrow">Expérience</p>
-      <div class="role"><h3>Technicien DataCenter, stagiaire</h3><span>Microsoft · Marseille · avril à juillet 2026</span></div>
-      <p class="intro">Un stage au cœur d’une colocation de production, sur cinq missions concrètes.</p>
-      <div class="grid">
-        <article class="card"><h3>Déploiement</h3><p>Installation et mise en service complètes de nouveaux serveurs dans la colocation.</p></article>
-        <article class="card"><h3>Maintenance</h3><p>Diagnostic et résolution des incidents matériels sur les serveurs de production.</p></article>
-        <article class="card"><h3>Câblage</h3><p>Tirage, mise en place et étiquetage standardisé des câbles, conformément au schéma de câblage.</p></article>
-        <article class="card"><h3>Décommission</h3><p>Retrait des équipements, y compris le retrait sécurisé de leurs composants internes.</p></article>
-        <article class="card"><h3>Gestion des données</h3><p>Application rigoureuse des protocoles de sécurité pour les supports de stockage, en environnement critique.</p></article>
+      <h2>La vie d’un <em>serveur</em></h2>
+      <div class="role"><span><b>Technicien DataCenter, stagiaire</b> · Microsoft, Marseille</span><span>Avril à juillet 2026</span></div>
+      <div>
+        <article class="row"><span class="num">01</span><h3>Déploiement</h3><p>Installation et mise en service complètes de nouveaux serveurs informatiques dans la colocation.</p></article>
+        <article class="row"><span class="num">02</span><h3>Câblage</h3><p>Tirage, mise en place et étiquetage standardisé des câbles, conformément au schéma de câblage.</p></article>
+        <article class="row"><span class="num">03</span><h3>Maintenance</h3><p>Diagnostic et résolution des incidents matériels sur les serveurs de production.</p></article>
+        <article class="row"><span class="num">04</span><h3>Décommission</h3><p>Retrait des équipements, y compris le retrait sécurisé de leurs composants internes.</p></article>
+        <article class="row"><span class="num">05</span><h3>Gestion des données</h3><p>Application rigoureuse des protocoles de sécurité pour les supports de stockage, en environnement critique.</p></article>
       </div>
     </div>
   </section>
 
-  <section class="s" id="competences">
+  <section id="competences">
     <div class="wrap fade">
       <p class="eyebrow">Compétences</p>
-      <h2>Du câble jusqu’au réseau.</h2>
-      <p class="intro">Le terrain d’abord, la théorie réseau et la sécurité ensuite : j’aime comprendre toute la chaîne.</p>
-      <div class="grid">
-        <article class="card"><h3>Infrastructure</h3>
-          <ul class="chips"><li>Montage PC et hardware</li><li>Câble Ethernet testé au Fluke DSP</li><li>Étiquetage et schémas de câblage</li></ul></article>
-        <article class="card"><h3>Réseaux</h3>
-          <ul class="chips"><li>TCP/IP (IPv4, IPv6)</li><li>RIP, OSPF, EIGRP, BGP</li><li>Switchs et routeurs Cisco</li><li>ACL, NAT/PAT</li></ul></article>
-        <article class="card"><h3>Sécurité et outils</h3>
-          <ul class="chips"><li>Pare-feu Stormshield</li><li>Wireshark</li><li>nmap</li><li>Linux, SSH</li><li>Python, Flask</li></ul></article>
+      <h2>Du câble jusqu’au <em>réseau</em></h2>
+      <div class="tiers">
+        <div class="tier"><p class="eyebrow">Terrain</p><h3>Infrastructure</h3>
+          <ul><li>Montage PC et hardware</li><li>Câble Ethernet testé au Fluke DSP</li><li>Étiquetage et schémas de câblage</li></ul></div>
+        <div class="tier"><p class="eyebrow">Théorie</p><h3>Réseaux</h3>
+          <ul><li>TCP/IP (IPv4, IPv6)</li><li>RIP, OSPF, EIGRP, BGP</li><li>Switchs et routeurs Cisco</li><li>ACL, NAT/PAT</li></ul></div>
+        <div class="tier"><p class="eyebrow">Protection</p><h3>Sécurité et outils</h3>
+          <ul><li>Pare-feu Stormshield</li><li>Wireshark et nmap</li><li>Linux et SSH</li><li>Python et Flask</li></ul></div>
       </div>
     </div>
   </section>
 
-  <section class="s" id="projets">
+  <section id="projets">
     <div class="wrap fade">
       <p class="eyebrow">Projets</p>
-      <h2>Ce que j’ai construit.</h2>
-      <div class="grid two" style="margin-top:36px">
-        <article class="card"><span class="kind">Projet tutoré · BUT R&amp;T</span><h3>Consultation centralisée de journaux système</h3>
-          <p>Une application web qui rassemble les journaux de serveurs Linux distants, consultés de façon sécurisée via SSH, avec authentification, rôles et privilèges. Documentation d’installation et d’utilisation rédigée.</p>
-          <ul class="chips"><li>Python / Flask</li><li>MariaDB + SQLAlchemy</li><li>Linux, SSH</li></ul></article>
-        <article class="card"><span class="kind">Laboratoire · Réseau</span><h3>Pare-feu Stormshield CSNE</h3>
-          <p>Deux pare-feu SN310 séparant les zones DMZ, LAN et WAN, avec règles de filtrage, NAT/PAT et analyse des journaux IPS/IDS pour comprendre le suivi des connexions.</p>
-          <ul class="chips"><li>Stormshield SN310</li><li>DMZ / LAN / WAN</li><li>IPS / IDS</li></ul></article>
-        <article class="card"><span class="kind">Projet personnel · Web</span><h3>Cosmo Car</h3>
-          <p>Site d’une entreprise de lavage auto, déployé sur Render avec nom de domaine personnalisé, formulaire de contact par e-mail et mentions légales.</p>
-          <ul class="chips"><li>Flask</li><li>Bootstrap 5</li><li>Flask-Mail</li><li>DNS</li></ul></article>
+      <h2>Ce que j’ai <em>construit</em></h2>
+      <div>
+        <article class="row"><span class="num">A</span><div><h3>Journaux système centralisés</h3><p style="margin-top:6px">Projet tutoré · BUT R&amp;T</p></div>
+          <div><p>Application web qui rassemble les journaux de serveurs Linux distants, consultés de façon sécurisée via SSH, avec authentification, rôles et privilèges. Documentation d’installation et d’utilisation rédigée.</p>
+          <ul class="chips"><li>Python / Flask</li><li>MariaDB + SQLAlchemy</li><li>Linux, SSH</li></ul></div></article>
+        <article class="row"><span class="num">B</span><div><h3>Pare-feu Stormshield</h3><p style="margin-top:6px">Laboratoire · Réseau</p></div>
+          <div><p>Deux pare-feu SN310 séparant les zones DMZ, LAN et WAN, avec règles de filtrage, NAT/PAT et analyse des journaux IPS/IDS pour comprendre le suivi des connexions.</p>
+          <ul class="chips"><li>Stormshield SN310</li><li>DMZ / LAN / WAN</li><li>IPS / IDS</li></ul></div></article>
+        <article class="row"><span class="num">C</span><div><h3>Cosmo Car</h3><p style="margin-top:6px">Projet personnel · Web</p></div>
+          <div><p>Site d’une entreprise de lavage auto, déployé sur Render avec nom de domaine personnalisé, formulaire de contact par e-mail et mentions légales.</p>
+          <ul class="chips"><li>Flask</li><li>Bootstrap 5</li><li>Flask-Mail</li><li>DNS</li></ul></div></article>
       </div>
     </div>
   </section>
 
-  <section class="s" id="formation">
+  <div class="dark" id="formation">
     <div class="wrap fade">
-      <p class="eyebrow">Formation</p>
-      <h2>Certifications et parcours.</h2>
-      <ul class="certs" style="margin-top:36px">
+      <p class="eyebrow" style="color:#B4B8C0">Formation</p>
+      <h2>Certifications et <em>parcours</em></h2>
+      <ul class="certs">
         <li><b>CSNA 2026</b><small>Stormshield Network Administrator</small></li>
         <li><b>CCNA SRWE 2026</b><small>Cisco Networking Academy, Switching, Routing and Wireless Essentials</small></li>
         <li><b>CCNA ITN 2025</b><small>Cisco Networking Academy, Introduction to Networks</small></li>
         <li><b>ANSSI 2025</b><small>MOOC SecNumacadémie, formation SecNumedu</small></li>
       </ul>
-      <ol class="timeline">
-        <li><h3>BUT Réseaux et Télécommunications, option cybersécurité</h3><p>IUT Aix-Marseille, Luminy · depuis 2024</p></li>
-        <li><h3>Baccalauréat STI2D, spécialité SIN</h3><p>Lycée Pierre Mendès France, Vitrolles · 2022 à 2024 · mention</p></li>
-      </ol>
+      <div class="edu">
+        <div><h3>BUT Réseaux et Télécommunications</h3><p>Option cybersécurité · IUT Aix-Marseille, Luminy · depuis 2024</p></div>
+        <div><h3>Baccalauréat STI2D, spécialité SIN</h3><p>Lycée Pierre Mendès France, Vitrolles · 2022 à 2024 · mention</p></div>
+      </div>
     </div>
-  </section>
+  </div>
 
   <section class="contact" id="contact">
     <div class="wrap fade">
       <p class="eyebrow">Contact</p>
-      <h2>Travaillons ensemble.</h2>
-      <p class="intro" style="margin:0 auto">Alternance, stage ou projet autour des datacenters et de l’infrastructure : écrivez-moi.</p>
+      <h2>Prêt à <em>travailler</em> ensemble ?</h2>
+      <a class="mail" href="mailto:oussamamadih.pro@gmail.com">oussamamadih.pro@gmail.com</a>
       <div class="links">
-        <a class="btn main" href="mailto:oussamamadih.pro@gmail.com">oussamamadih.pro@gmail.com</a>
-        <a class="btn" href="https://www.linkedin.com/in/oussama-madih/" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="btn" href="https://github.com/oussamamadih23-coder" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/oussama-madih/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/oussamamadih23-coder" target="_blank" rel="noopener">GitHub</a>
       </div>
     </div>
   </section>
 </main>
 
-<footer>© 2026 Oussama Madih · Marseille</footer>
+<footer><div class="wrap"><span>© 2026 Oussama Madih</span><span>Marseille, France</span></div></footer>
 
 <script>
 (function(){
-  var rm=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var els=document.querySelectorAll('.fade');
+  var rm=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if('IntersectionObserver' in window && !rm){
-    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.1});
     els.forEach(function(el){io.observe(el)});
   }else{els.forEach(function(el){el.classList.add('in')})}
-  var c=document.getElementById('snow'),x=c.getContext('2d'),w,h,p=[],n=90,mx=0,dpr=window.devicePixelRatio||1;
-  function size(){w=c.width=innerWidth*dpr;h=c.height=innerHeight*dpr}
-  function init(){p=[];for(var i=0;i<n;i++)p.push({x:Math.random()*w,y:Math.random()*h,r:(Math.random()*1.8+.5)*dpr,v:Math.random()*.35+.12,d:Math.random()*6.28})}
-  function draw(){
-    x.clearRect(0,0,w,h);
-    for(var i=0;i<p.length;i++){var s=p[i];
-      x.beginPath();x.fillStyle='rgba(207,234,255,'+(.25+s.r/(6*dpr))+')';x.arc(s.x,s.y,s.r,0,6.283);x.fill();
-      if(!rm){s.y+=s.v*dpr;s.d+=.006;s.x+=Math.sin(s.d)*.35+mx*.15;
-        if(s.y>h+5){s.y=-5;s.x=Math.random()*w}if(s.x>w+5)s.x=-5;if(s.x<-5)s.x=w+5}}
-    if(!rm&&!document.hidden)requestAnimationFrame(draw);
-  }
-  addEventListener('mousemove',function(e){mx=(e.clientX/innerWidth-.5)*2});
-  addEventListener('resize',function(){size();init();if(rm)draw()});
-  document.addEventListener('visibilitychange',function(){if(!document.hidden&&!rm)requestAnimationFrame(draw)});
-  size();init();draw();
 })();
 </script>
 </body>
